@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdssBazzar</title>
+        <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/Form.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="js/form.js"></script>
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="./index.html">AdssBazzar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-2"><a class="nav-link" href="#">App</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="./services.html">Services</a></li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-outline-success rounded-pill px-4" href="./Form.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section with Form -->
+    <div class="hero-section py-5">
+        <div class="container px-0 px-lg-5">
+            <div class="card hero-card hero-card-overlap">
+                <div class="row g-0">
+                    <!-- Left side with text and wave graphic -->
+                    <div class="col-lg-4 d-none d-lg-flex hero-left text-white p-5 rounded-start-4">
+                        <div class="d-flex flex-column justify-content-center">
+                            <p class="mb-2 fs-1">Hello<br/> <span class="fw-bold">Welcome</span></p>
+                            <svg width="200" height="20" viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M199.354 10.3536C199.549 10.1583 199.549 9.84171 199.354 9.64645L196.172 6.46447C195.976 6.2692 195.66 6.2692 195.464 6.46447C195.269 6.65973 195.269 6.97631 195.464 7.17157L198.293 10L195.464 12.8284C195.269 13.0237 195.269 13.3403 195.464 13.5355C195.66 13.7308 195.976 13.7308 196.172 13.5355L199.354 10.3536ZM0 10.5H199V9.5H0V10.5Z" fill="white" stroke-width="0"/>
+                            </svg>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fw-normal display-6 mb-0  mt-5 text-white">Start <br> your Journey <br> with us</h1>
+                                <!-- <i class="fas fa-arrow-right ms-3" style="font-size: 2rem;"></i> -->
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right side with the form -->
+                    <div class="col-lg-8 bg-white p-4 p-lg-5 rounded-4 rounded-start-0">
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control " name="firstName" id="firstName" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                    <input type="tel" class="form-control" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="DD">
+                                        <input type="text" class="form-control" placeholder="MM">
+                                        <input type="text" class="form-control" placeholder="YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Mail ID">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bloodGroup" class="form-label">Blood Group</label>
+                                    <input type="text" class="form-control"  name="bloodGroup" id="bloodGroup" placeholder="Blood Group">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="brandName" class="form-label">Brand Name</label>
+                                    <input type="text" class="form-control"  name="brandName" id="brandName" placeholder="Shop Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="gstNumber" class="form-label">GST/Registration Number</label>
+                                    <input type="text" class="form-control" name="gstNumber" id="gstNumber" placeholder="GST/Registration Number">
+                                </div>
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" name="address" id="address" placeholder="Line 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="district" placeholder="District">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="state" placeholder="State">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="pincode" placeholder="Pincode">
+                                </div>
+                                <div class="col-12 d-flex justify-content-center justify-content-md-center mt-4">
+                                    <button type="submit" class="btn submit-btn w-30 w-md-auto px-5 py-2 rounded-4">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-section  py-5">
+        <div class="container text-center">
+            <h2 class="mb-0 mt-5">We Turn Your Business into</h2>
+            <h1 class="mt-2 mb-5">Iconic Brand</h1>
+            
+            <div class="row g-4 justify-content-center">
+                
+                <!-- Card 1: Create -->
+         <div class="col-md-4">
+        <div class="business-card p-3 h-100">
+          <div class="icon-circle mb-1">
+            <img src="images/Group 13.svg" alt="Create" class="img-fluid">
+          </div>
+          <h4 class="fw-bold ">Create</h4>
+          <p class="text-muted">Create your product ad<br/> and post it on our app.</p>
+        </div>
+      </div>
+
+                <!-- Card 2: Publish -->
+          <div class="col-md-4">
+        <div class="business-card p-3 h-100">
+          <div class="icon-circle mb-1">
+            <img src="images/Group 14.svg" alt="Publish" class="img-fluid">
+          </div>
+          <h4 class="fw-bold">Publish</h4>
+          <p class="text-muted">Post your engaging product<br/> ad in our App to get noticed<br/> by valid customers</p>
+        </div>
+      </div>
+
+                <!-- Card 3: Get Lead -->
+         <div class="col-md-4">
+        <div class="business-card p-3 h-100">
+          <div class="icon-circle mb-1">
+            <img src="images/Group 15.svg" alt="Get Lead" class="img-fluid">
+          </div>
+          <h4 class="fw-bold">Get Lead</h4>
+          <p class="text-muted">Great! You will get the<br/> trusted leads.</p>
+        </div>
+      </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Why Choose Us Section -->
+  <section class="why-choose py-5">
+    <div class="container">
+      <h3 class="text-center fw-semibold mb-5">Why Choose Us?</h3>
+      <div class="row align-items-center">
+        
+        <!-- Left Side (Buyers & Sellers) -->
+        <div class="col-lg-7">
+          
+          <!-- For Buyers -->
+          <h4 class="fw-bold mb-5">For Buyers</h4>
+          <div class="row g-4 mb-5">
+            <div class="col-md-4 col-12">
+              <div class="choose-card p-3 text-center h-100">
+               <div class="star-icon">
+ <img src="images/Star 6.svg" alt="">
+  </div>
+                <p>Discover<br/> exclusive offers<br/> in real estates,<br/> furniture<br/> apparels <br/>& More..</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="choose-card p-3 text-center h-100">
+                         <div class="star-icon">
+  <img src="images/Star 6.svg" alt="">
+  </div>
+                <p>Save your<br/> favorites & get <br/>instant alerts<br/> for new deals</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="choose-card p-3 text-center h-100">
+                         <div class="star-icon">
+    <img src="images/Star 6.svg" alt="">
+  </div>
+                <p>Chat directly<br/> with sellers<br/> in real-time</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- For Sellers -->
+          <h4 class="fw-bold mb-5">For Sellers</h4>
+          <div class="row g-4">
+            <div class="col-md-4 col-12">
+              <div class="choose-card p-3 text-center h-100">
+                          <div class="star-icon">
+  <img src="images/Star 6.svg" alt="">
+  </div>
+                <p>Showcase<br/> your products<br/> to thousands <br/>of potential <br/>buyers<br/> instantly</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="choose-card p-3 text-center h-100">
+                         <div class="star-icon">
+  <img src="images/Star 6.svg" alt="">
+  </div>
+                <p>Run targeted<br/> promotions <br/>to reach the<br/> right<br/> audience</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="choose-card p-3 text-center h-100">
+                        <div class="star-icon">
+    <img src="images/Star 6.svg" alt="">
+  </div>
+                <p>Manage <br/>inquiries and<br/> close deals<br/> faster</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side (Phone Image) -->
+        <div class="col-lg-5 text-center mt-5  mt-lg-0">
+          <img src="images/123 1 (1).svg" alt="App Preview" class="img-fluid phone-tilt">
+        </div>
+      </div>
+    </div>   
+  </section>
+<!-- Services Section -->
+<section class="services-section py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Heading -->
+      <div class="col-lg-3 d-flex">
+        <h3 class="fw-bold services-title ">
+          Services <br> We Are <br> Offering
+        </h3>
+      </div>
+
+      <!-- First 3 cards -->
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/realestate.svg" alt="">
+          </div>
+          <h5 class="fw-bold">Real Estate</h5>
+          <p>Turn properties into <br/>irresistible opportunities<br/> that sell faster.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/Hotel (2).svg" alt="">
+          </div>
+          <h5 class="fw-bold">Hotels</h5>
+          <p>Fill more rooms with<br/> campaigns that inspire<br/> wanderlust.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/Cart (2).svg" alt="">
+          </div>
+          <h5 class="fw-bold">Groceries</h5>
+          <p>Showcase furniture so<br/> stunning, customers <br/>can’t wait to bring it home.</p>
+        </div>
+      </div>
+
+      <!-- Next 4 cards (2nd row) -->
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/restaraunts.svg" alt="">
+          </div>
+          <h5 class="fw-bold">Restaurants</h5>
+          <p>From plate to post — <br/>we make your flavours go viral.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/Furniture.svg" alt="">
+          </div>
+          <h5 class="fw-bold">Furniture</h5>
+          <p>Showcase furniture so <br/>stunning, customers <br/>can’t wait to bring it home.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/apparels (2).svg" alt="">
+          </div>
+          <h5 class="fw-bold">Apparels</h5>
+          <p>Showcase furniture so <br/>stunning, customers <br/>can’t wait to bring it home.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <img src="images/electronic.svg" alt="">
+          </div>
+          <h5 class="fw-bold">Electronics</h5>
+          <p>Showcase furniture so<br/> stunning, customers<br/> can’t wait to bring it home.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Loading Soon -->
+    <div class="text-end mt-4">
+      <a href="#" class="fw-bold more-link" style="text-decoration: underline;">More Loading Soon &gt;&gt;&gt;</a>
+    </div>
+  </div>
+</section>
+<!-- Coming Soon Section -->
+<section class="coming-soon text-center d-flex flex-column align-items-center justify-content-center">
+    <!-- Phones -->
+  <div class="phone-images d-flex justify-content-center align-items-end mb-4 ">
+    <img src="images/121.svg" alt="Phone 1" class="phone left-phone img-fluid">
+    <img src="images/123 3.svg" alt="Phone 2" class="phone center-phone img-fluid">
+    <img src="images/112.svg" alt="Phone 3" class="phone right-phone img-fluid">
+  </div>
+
+  <!-- Text -->
+  <h1 class="fw-bold mt-5">We are coming <br><span class="soon-text ">SOON</span></h1>
+
+  <!-- Register Button -->
+  <a href="#" class="btn register-btn mt-3">Register Now <i class="bi bi-arrow-right ms-2"></i></a>
+
+  <!-- Footer Brand -->
+  <h3 class="brand mt-5 fw-bold">AdssBazzar</h3>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
